@@ -8,7 +8,7 @@ Sample desired result:
 Rank: 1; Score: 100% (Tie)
 
 
-Create a rank from district score. Highest score gets lowest rank number.
+Create a rank from team score. Highest score gets lowest rank number.
 ```sql
 UPDATE the_table
 SET "rank" = v_table.rnk
@@ -29,7 +29,7 @@ from the_table) as v_table
 WHERE the_table.team = v_table.team
 ```
 
-If two or more ranks match (i.e. if the original district_score(s) were the same), add the word " (Tie)" This includes the space. 
+If two or more ranks match (i.e. if the original scores were the same), add the word " (Tie)" This includes the space. 
 ```sql
 UPDATE the_table
 SET “rank_tie" = v_table.tie
