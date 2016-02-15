@@ -1,3 +1,3 @@
 # tipsheets
 
-[Scores, Ranks, and Ties](scores_ranks_and_ties.md)
+[Scores, ranks, ordinal number suffixes, and ties](scores_ranks_and_ties.md)
