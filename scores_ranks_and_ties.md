@@ -1,6 +1,7 @@
 # tipsheets
 
 Original column: score
+
 Add columns: rank, rank_text, rank_tie.
 
 Sample desired result:
@@ -8,7 +9,7 @@ Rank: 1; Score: 100% (Tie)
 
 
 Create a rank from district score. Highest score gets lowest rank number.
-```
+```sql
 UPDATE the_table
 SET "rank" = v_table.rnk
 FROM
@@ -19,7 +20,7 @@ WHERE the_table.team = v_table.team
 ```
 
 Add ordinal number suffixes (for instance, from ranks 1, 2, 3, 4 get 1st, 2nd, 3rd, 4th) 
-```
+```sql
 UPDATE the_table
 SET "rank_text" = v_table.ord
 From
@@ -29,7 +30,7 @@ WHERE the_table.team = v_table.team
 ```
 
 If two or more ranks match (i.e. if the original district_score(s) were the same), add the word " (Tie)" This includes the space. 
-```
+```sql
 UPDATE the_table
 SET “rank_tie" = v_table.tie
 FROM(SELECT rank, ' (Tie)' AS tie
