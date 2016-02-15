@@ -1,4 +1,4 @@
-# tipsheets
+#Calculating ranks, ordinal suffixes, and ties from scores
 
 Original column: score
 
