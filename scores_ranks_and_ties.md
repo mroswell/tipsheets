@@ -1,4 +1,4 @@
-#Calculating ranks, ordinal suffixes, and ties from scores
+#Calculating ranks, ordinal number suffixes, and ties from scores
 
 Original column: score
 
@@ -40,7 +40,7 @@ HAVING count(*) > 1) as v_table
 WHERE the_table.rank = v_table.rank
 ```
 
-Include the variables in the infowindow
+Sample template code
 ```
 <p>Rank: {{rank}}; Score: {{score}}%{{rank_tie}}</p>
 ```
