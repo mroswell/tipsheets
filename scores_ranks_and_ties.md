@@ -32,7 +32,7 @@ WHERE the_table.team = v_table.team
 If two or more ranks match (i.e. if the original scores were the same), add the word " (Tie)" This includes the space. 
 ```sql
 UPDATE the_table
-SET “rank_tie" = v_table.tie
+SET "rank_tie" = v_table.tie
 FROM(SELECT rank, ' (Tie)' AS tie
 FROM the_table
 GROUP BY rank, tie
