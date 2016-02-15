@@ -1,4 +1,4 @@
-#Calculating ranks, ordinal number suffixes, and ties from scores
+#Calculate ranks, ordinal number suffixes, and ties from scores
 
 Original column: score
 
