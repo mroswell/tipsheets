@@ -42,6 +42,6 @@ WHERE the_table.rank = v_table.rank
 
 Sample template code
 ```
-<p>Rank: {{rank}}; Score: {{score}}%{{rank_tie}}</p>
+<p>Rank: {{rank_text}}; Score: {{score}}%{{rank_tie}}</p>
 ```
 
